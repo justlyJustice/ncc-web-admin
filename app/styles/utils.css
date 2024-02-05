@@ -1,0 +1,36 @@
+.flex {
+  align-items: center;
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Backgrounds */
+.bg-primary-900 {
+  background-color: var(--primary-900) !important;
+}
+
+.bg-primary-1100 {
+  background-color: var(--primary-1000) !important;
+}
+
+.bg-success {
+  background-color: var(--success) !important;
+}
+
+.bg-danger {
+  background-color: var(--danger) !important;
+}
+
+.bg-warning {
+  background-color: var(--warning) !important;
+}
+
+/* Text colors */
+.webkit-clamp-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
