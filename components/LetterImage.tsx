@@ -1,6 +1,10 @@
-import getRandomColor from "@/utils/colors";
+import getRandomColor from "@/utils/helpers";
 
-function LetterImage({ name, ...otherProps }) {
+interface Params {
+  name: string;
+}
+
+function LetterImage({ name, ...otherProps }: Params) {
   if (!name) return null;
 
   const firstLetter = name.charAt(0).toUpperCase();

@@ -4,7 +4,13 @@ import Link from "next/link";
 
 // import GoogleAuth from "./GoogleAuth";
 
-const FormHeader = ({ title, description, page = "/" }) => {
+interface Props {
+  title: string;
+  description: string;
+  page?: string;
+}
+
+const FormHeader = ({ title, description, page = "/" }: Props) => {
   return (
     <>
       <Image

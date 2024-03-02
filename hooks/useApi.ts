@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const useApi = (apiFunc: Function, endpoint: string) => {
+const useApi = (apiFunc: Function, endpoint?: string) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);

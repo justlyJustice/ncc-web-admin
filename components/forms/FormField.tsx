@@ -1,17 +1,26 @@
-import * as PropTypes from "prop-types";
 import { useFormikContext } from "formik";
 
 import Input from "../Input";
 import ErrorMessage from "../ErrorMessage";
+import { ChangeEvent } from "react";
 
-const FormField = ({ name, placeholder = "", type, ...props }) => {
+interface Props {
+  name: string;
+  placeholder?: string;
+  type?: string;
+  label?: string;
+}
+
+const FormField = ({ name, placeholder, type, ...props }: Props) => {
   const { values, errors, setFieldValue, touched } = useFormikContext();
 
   return (
     <>
       <Input
         name={name}
-        onChange={(e) => setFieldValue(name, e.target.value)}
+        onChange={(e: ChangeEvent<HTMLInputElement>) =>
+          setFieldValue(name, e.target.value)
+        }
         placeholder={placeholder}
         type={type ? type : "text"}
         value={values[name]}
@@ -21,12 +30,6 @@ const FormField = ({ name, placeholder = "", type, ...props }) => {
       <ErrorMessage error={errors[name]} visible={touched[name]} />
     </>
   );
-};
-
-Input.propTypes = {
-  name: PropTypes.string.isRequired,
-  type: PropTypes.string,
-  placeholder: PropTypes.string,
 };
 
 export default FormField;

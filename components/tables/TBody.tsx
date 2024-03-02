@@ -13,7 +13,7 @@ const statusBackgrounds = {
   finished: "bg-warning",
 };
 
-const TBody = ({ calls, handleSelectCall, selectAll }) => {
+const TBody = ({ calls, handleSelectCall, selectedCalls }) => {
   const router = useRouter();
 
   return (

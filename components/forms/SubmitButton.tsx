@@ -1,11 +1,18 @@
 import { useFormikContext } from "formik";
 import Button from "../Button";
 
-const SubmitButton = ({ children, success, ...props }) => {
+const SubmitButton = ({
+  children,
+  ...props
+}: {
+  className?: string;
+  children: React.ReactNode;
+  type?: string;
+}) => {
   const { handleSubmit } = useFormikContext();
 
   return (
-    <Button onClick={handleSubmit} success={success} {...props}>
+    <Button onClick={handleSubmit} {...props}>
       {children}
     </Button>
   );

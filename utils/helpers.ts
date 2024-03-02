@@ -14,7 +14,7 @@ export const getCallStatus = (status: string): string => {
   }
 };
 
-export default function getRandomColor(letter) {
+export default function getRandomColor(letter: string) {
   const colors = [
     "#0000FF", // Blue
     "#FF0000", // Red
@@ -55,15 +55,18 @@ export default function getRandomColor(letter) {
   return colors[colorIndex];
 }
 
-export const formatDate = (timestamp) => {
-  const options = {
-    year: "numeric",
-    month: "long",
-    day: "2-digit",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-  };
+export const formatDate = (timestamp: string) => {
   const date = new Date(timestamp);
-  return date.toLocaleString("en-US", options).replace("at", ",").trim();
+
+  return date
+    .toLocaleString("en-US", {
+      month: "long",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      year: "numeric",
+    })
+    .replace("at", ",")
+    .trim();
 };

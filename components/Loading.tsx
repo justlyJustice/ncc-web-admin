@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
 
-const Loading = ({ visible }) => {
+const Loading = ({ visible }: { visible: boolean }) => {
   if (!visible) return null;
 
   return (

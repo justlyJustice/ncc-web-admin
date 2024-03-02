@@ -2,6 +2,7 @@ import client from "./client";
 import jwtDecode from "jwt-decode";
 
 import storage from "@/utils/storage";
+// import { create } from "@/app/actions";
 
 const tokenKey = "token";
 
@@ -12,6 +13,7 @@ const login = async (loginInfo) => {
     const { data } = res.data;
 
     storage.setItem(tokenKey, data.token);
+    // create(data.token);
   }
 
   return res;

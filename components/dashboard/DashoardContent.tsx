@@ -1,4 +1,11 @@
-const DashoardContent = ({ children }) => {
+const DashoardContent = ({
+  children,
+  className,
+  ...otherProps
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
   return (
     <div className="content">
       <div className="top-container">

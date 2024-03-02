@@ -40,8 +40,8 @@ function Login() {
     <div className="wrapper">
       <div className="form-contain">
         <FormHeader
-          title="Admin Sign In, Feasibility Communication"
-          description="Sign in to continue to dashboard."
+          title="Sign In, FGiant Comm Web"
+          description="Sign in to continue to admin dashboard."
         />
 
         <ErrorMessage error={errorMessage} visible={isError} />
