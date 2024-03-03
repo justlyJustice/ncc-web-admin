@@ -1,24 +1,20 @@
-import { facebook, google } from "@/public/assets";
 import Image from "next/image";
-import Link from "next/link";
-
-// import GoogleAuth from "./GoogleAuth";
 
 interface Props {
   title: string;
   description: string;
-  page?: string;
 }
 
-const FormHeader = ({ title, description, page = "/" }: Props) => {
+const FormHeader = ({ title, description }: Props) => {
   return (
     <>
       <Image
         alt="logo"
         className="logo"
-        height={300}
+        height={100}
         src="/assets/logo.png"
-        width={300}
+        width={100}
+        quality={100}
         priority
       />
 
@@ -36,15 +32,6 @@ const FormHeader = ({ title, description, page = "/" }: Props) => {
           </span> */}
         </p>
       </div>
-
-      {/* <div className="auth-providers">
-        <GoogleAuth />
-
-        <button>
-          <Image alt="auth-img" className="image" src={facebook} />
-          Continue with Facebook
-        </button>
-      </div> */}
 
       {/* <div className="seperator">
         <hr />

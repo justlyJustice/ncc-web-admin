@@ -24,13 +24,13 @@ const TBody = ({ calls, handleSelectCall, selectedCalls }) => {
           key={call._id}
           onClick={() => router.push(`/dashboard/${call._id}/details`, call)}
         >
-          <div>
+          {/* <div>
             <input
               checked={call.selected}
               type="checkbox"
               onChange={(e) => handleSelectCall(call._id, e)}
             />
-          </div>
+          </div> */}
 
           <div className="flex">
             {call.userImage ? (

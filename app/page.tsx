@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+
 import { useRouter } from "next/navigation";
 
 import ErrorMessage from "@/components/ErrorMessage";
@@ -8,7 +8,6 @@ import { Form, FormField, SubmitButton } from "@/components/forms";
 
 import authService from "@/services/auth";
 
-import useAuth from "@/hooks/useAuth";
 import useSubmit from "@/hooks/useSubmit";
 
 import withAuth from "@/hoc/withAuth";
@@ -17,7 +16,6 @@ import validationSchema from "@/validation/form.schema";
 
 function Login() {
   const router = useRouter();
-  const { user } = useAuth();
 
   const {
     errorMessage,
@@ -78,4 +76,4 @@ function Login() {
   );
 }
 
-export default withAuth(Login);
+export default Login;

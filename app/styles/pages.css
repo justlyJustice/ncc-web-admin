@@ -16,7 +16,7 @@
 
 .logo {
   object-fit: contain;
-  height: 150px;
+  height: 120px;
   width: auto;
   /* width: 300px; */
 }
@@ -29,7 +29,7 @@
   color: var(--primary_1100);
   font-weight: 700;
   font-size: 22px;
-  line-height: 38px;
+  line-height: 30px;
 }
 
 .text-contain p {
@@ -37,7 +37,7 @@
   font-family: Inter;
   font-weight: 400;
   font-size: 17px;
-  line-height: 21px;
+  line-height: 17px;
 }
 
 .text-contain p span {
@@ -69,7 +69,7 @@
   font-family: Inter;
   justify-content: center;
   margin: 10px 0;
-  padding: 15px;
+  padding: 12px;
   width: 100%;
 }
 
@@ -87,8 +87,9 @@
 }
 
 .seperator hr {
-  border: 1px solid rgba(20, 1, 26, 0.6);
-  width: 47%;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  flex: 1;
+  /* width: 45%; */
 }
 
 .seperator span {
@@ -96,6 +97,7 @@
   font-size: 17px;
   letter-spacing: 0.5px;
   line-height: 21px;
+  margin: 0px 5px;
 }
 
 .form {
@@ -114,7 +116,7 @@
 .form-field label {
   font-family: Inter;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 21px;
   letter-spacing: 0.5px;
   color: #000000;
@@ -126,28 +128,28 @@
   border-radius: 10px;
   font-family: Poppins;
   margin: 2px 0;
-  padding: 15px;
+  padding: 12px;
 }
 
 .form-btn {
   background-color: var(--primary-900);
-  border-radius: 40px;
+  border-radius: 10px;
   color: var(--secondary-100);
   font-family: "Inter";
   font-weight: 700;
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 0.5px;
   line-height: 21px;
   margin: 10px 0;
-  padding: 15px;
+  padding: 12px;
   width: 100%;
 }
 
 .error {
   color: var(--danger);
   font-family: Inter;
-  font-size: 14px;
-  margin: 5px 0;
+  font-size: 13px;
+  margin: 0px;
 }
 
 .loading-bg {

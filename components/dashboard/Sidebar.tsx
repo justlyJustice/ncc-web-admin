@@ -12,7 +12,13 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar">
-      <Image alt="logo" className="sidebar-logo" priority src={logo} />
+      <Image
+        alt="logo"
+        className="sidebar-logo"
+        priority
+        quality={100}
+        src={logo}
+      />
 
       {menuVisible ? (
         <i className="bx bx-close" onClick={toggleMenu}></i>

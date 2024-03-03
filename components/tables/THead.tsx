@@ -1,13 +1,13 @@
 const Thead = ({ handleSelectAllContacts, selectAll }) => {
   return (
     <div className="thead flex">
-      <div>
+      {/* <div>
         <input
           type="checkbox"
           // checked={selectAll}
           onChange={handleSelectAllContacts}
         />
-      </div>
+      </div> */}
 
       <div>
         <p>Caller</p>

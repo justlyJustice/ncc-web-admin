@@ -15,11 +15,11 @@ function LetterImage({ name, ...otherProps }: Params) {
         .contain {
           align-items: center;
           background-color: ${getRandomColor(name)};
-          border-radius: 50px;
-          height: 35px;
+          border-radius: 30px;
+          height: 30px;
           justify-content: center;
           margin: 0px 5px;
-          width: 35px;
+          width: 30px;
         }
 
         span {
@@ -30,9 +30,9 @@ function LetterImage({ name, ...otherProps }: Params) {
         }
       `}</style>
 
-      <p className="flex contain" {...otherProps}>
+      <div className="flex contain" {...otherProps}>
         <span>{firstLetter}</span>
-      </p>
+      </div>
     </>
   );
 }
